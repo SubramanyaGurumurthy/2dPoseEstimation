@@ -1,4 +1,4 @@
-# RealTimeHandGestureDetection
+# RealTimeHandTracking
 
 Realtime pose detection of the human body is an important task in computer vision as the detected results can be further used for understanding and to analyze person's position, and the task that the person is performing. In this work I have used the [Mediapipe library](https://google.github.io/mediapipe/solutions/hands) by google for the detection and tracking of key points. The proposed application uses the raw pixel values of the captured image to detect different points on the human body. I further use these points for different sub-tasks such as Gesture Volume Control, Paint App using fingers.
 
