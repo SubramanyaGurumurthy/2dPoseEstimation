@@ -1,6 +1,12 @@
-## Paint Module
-In this module, user can paint on the camera screen using finger gestures. Similar to volume control module, here the program first detects the hand and the tip of the index finger and middle finger is extracted from the detected points. The painter module offer 3 different colors to chose from and an eraser options. By using both middle finger and index finger together and closing other fingers, user can switch between colors or eraser which can be found on the top of the screen. After selection, the user can paint or erase by just using index finger. By default in the beginning, pink color will be selected. For the visual demonstration [click here](https://youtu.be/u2zQ_nwl4WA)
+# Paint Module
+In this module, user can paint on the camera screen using finger gestures. Similar to [Gesture_Volume_control](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/tree/main/Gesture_Volume_Control) module, here the program first detects the hand and within which the index finger and thumb tip positions are extracted. Using the extracted details, the user's gesture is painted on the screen. The painter module offer 3 different colors to chose from and an eraser options. By using both middle finger and index finger together and closing other fingers, user can switch between colors or eraser which can be found on the top of the screen. After selection, the user can paint or erase by just using just index finger. By default in the beginning, pink color will be selected. For the visual demonstration [click here](https://youtu.be/u2zQ_nwl4WA)
 
-### Tools used: 
-Libraries: matplotlib, mediapipe, Opencv, numpy, python
-IDE: VS Code
+## Methodology
+* The [HandTrackingModule.py](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Paint_Module/HandTrackingModule.py) helps to detect the hand and 21 different points on the hand. The function [*findPosition()*](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Paint_Module/HandTrackingModule.py#:~:text=def-,findPosition,-(self%2C)) returns 21 different point locations as a list from the given input image frame. 
+* Using the list, the index finger tip at 8th index position and middle finger tip at index 12 in the list is seperated.
+* The function [*fingersUp()*](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Paint_Module/virtualPainter.py#:~:text=fingers%20%3D%20detector.fingersUp()) checks if the middle finger is held up straight along with index finger or it is folded. 
+* If the middle finger is folded, the drawing mode is activated, else if middle finger is held up, selection mode is activated.
+* In selection mode, by moving middle and index finger into the corresponding icon at the top of the screen, user can select between colors and eraser.
+* In drawing mode, user can move the index finger around to draw.
+* All the drawings shall be performed on a image of numpy zeroes which has equal resolution as the camera image, and later both the images are processed and added using [*cv2.addWeighted()*](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Paint_Module/virtualPainter.py#:~:text=img%20%3D%20cv2.addWeighted(img%2C%200.5%2C%20imgCanvas%2C%200.5%2C%200)) to achieve the live video painting.  
+* Refer to this link to see live demonstration of the [Paint Module](https://youtu.be/u2zQ_nwl4WA)
