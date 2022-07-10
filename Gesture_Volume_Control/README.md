@@ -3,3 +3,6 @@ In this module, user can control the device's volume using hand gesutre. Basical
 ![volume control](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/gif/Volume_control.gif)
 
 
+### Tools used: 
+Libraries: pycaw, mediapipe, Opencv, numpy, python
+IDE: VS Code
