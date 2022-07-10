@@ -62,3 +62,4 @@ In this module, user can paint on the camera screen using finger gestures. Simil
 * In drawing mode, user can move the index finger around to draw.
 * All the drawings shall be performed on a image of numpy zeroes which has equal resolution as the camera image, and later both the images are processed and added using [*cv2.addWeighted()*](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Paint_Module/virtualPainter.py#:~:text=img%20%3D%20cv2.addWeighted(img%2C%200.5%2C%20imgCanvas%2C%200.5%2C%200)) to achieve the live video painting.  
 * Refer to this link to see live demonstration of the [Paint Module](https://youtu.be/u2zQ_nwl4WA)
+![volume control](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/gif/ezgif.com-gif-maker.gif)
