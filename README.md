@@ -45,6 +45,6 @@ The listed details are the packages and versions which was used while developing
     └── ...
 
 # Further details about the sub modules
-    - [Gesture Volume Control](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Gesture_Volume_Control/README.md)
-    - [Pain Module](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Paint_Module/README.md)
+* [Gesture Volume Control](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Gesture_Volume_Control/README.md)
+* [Pain Module](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Paint_Module/README.md)
      
