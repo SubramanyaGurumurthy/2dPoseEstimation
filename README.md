@@ -1,15 +1,5 @@
 # RealTimeHandGestureDetection
 
-# Table of Contents
-- [Helpful Infos for a Better Workflow](#helpful-information-for-a-better-workflow)
-- [Carbon Fiber Discrepancy Detection](#carbon-fiber-discrepancy-detection)
-    - [Structure](#cfdd-structure)
-    - [README files](#cfdd-readme-files)
-- [Video Inpainting](#video-inpainting)
-    - [Structure](#structure)
-    - [Seperate README files](#there-are-seperate-readme-files-for-all-three-approaches)
-
-# Aim
 Realtime Detection of different points in the body is an important task in computer vision as the detected results can be further used for understanding and to analyze person's position, and the task that the person is performing. It can be also used for different purposes like contactless mouse usage, or much more, which eventually makes the system much more user-friendly and smart. In this work, I tried to come up with such a solution, a real-time body point detection using the camera. The proposed approach uses the raw pixel values of the captured image to detect different points on the human body. I further use these points for different sub-tasks such as Gesture Volume Control, Paint App using fingers, and angle detection between joints.
 
 # Dependencies
@@ -47,4 +37,10 @@ The listed details are the packages and versions which was used while developing
 # Further details about the sub modules
 * [Gesture Volume Control](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Gesture_Volume_Control/README.md)
 * [Pain Module](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/Paint_Module/README.md)
-     
+
+# Results
+## Gesture_Volume_Control
+![volume control](https://github.com/SubramanyaGurumurthy/RealTimeHandgestureDetection/blob/main/gif/Volume_control.gif)
+
+## Paint_Module
+[Link for the live demonstration video](https://youtu.be/u2zQ_nwl4WA)
